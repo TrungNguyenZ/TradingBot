@@ -13,6 +13,7 @@
 int OnInit()
   {
   Print("RSI: ",iRSI(Symbol(),1,14,PRICE_CLOSE,0));
+  Print("BollingBand",iBands(Symbol(),1,20,2,0,PRICE_LOW,MODE_LOWER,0));
   for(int i = 0; i<=4; i++){
   double data = iOpen(Symbol(),1,i);
   double hight = iHigh(Symbol(),1,i);
